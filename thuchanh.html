@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Zip America</title>
+</head>
+<body>
+<script>
+    let regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+
+    function is_usZipCode(str) {
+        regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (regexp.test(str)) {
+            return alert("True");
+        }
+        return alert("False");
+    }
+
+    let zip = prompt();
+    is_usZipCode(zip);
+</script>
+</body>
+</html>
